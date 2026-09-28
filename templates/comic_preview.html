@@ -1,0 +1,8 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Your Comic Preview</title>
+<link rel="stylesheet" href="/static/style.css"></head><body>
+<h1 class="center">📖 Your Comic Preview</h1>
+{% for panel in layout %}<div class="panel"><h3>Panel {{ panel.panel }}: {{ panel.title }}</h3>
+<img src="/{{ panel.image }}" alt="{{ panel.title }}"><p class="scene">{{ panel.scene }}</p>
+<pre>{{ panel.text }}</pre><p class="ref">Image prompt: {{ panel.image_prompt }}</p></div>{% endfor %}
+<div class="center"><a class="btn" href="{{ pdf_path }}" download onclick="setTimeout(function(){location.href='/export-success?pdf={{ pdf_path }}'},600)">⬇ Download Your Comic as PDF</a></div>
+</body></html>

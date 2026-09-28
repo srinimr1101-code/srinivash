@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>ComicCraft</title>
+<link rel="stylesheet" href="/static/style.css"></head><body class="home">
+<div class="card"><h1>🎨 ComicCraft</h1><p class="center">AI Comic Story Creator using Gemini Models</p>
+{% if demo %}<p class="note">Demo mode: no Gemini key found, so sample text and placeholder art are used. Add a key in <b>.env</b> for real AI.</p>{% endif %}
+<form action="/generate" method="post" onsubmit="this.querySelector('button').textContent='Generating…'">
+<label>Story Prompt</label><textarea name="prompt" rows="3" required placeholder="A brave fox exploring an enchanted forest"></textarea>
+<label>Main Character Name</label><input name="character" value="Finn" required>
+<label>Setting</label><select name="setting"><option>forest</option><option>school</option><option>space</option><option>city</option></select>
+<label>Story Tone</label><select name="tone"><option>dramatic</option><option>light-hearted</option><option>poetic</option><option>funny</option></select>
+<label>Art Style</label><select name="style"><option>anime</option><option>pixel art</option><option>comic book</option><option>realistic</option></select>
+<button type="submit">Generate Comic</button></form></div></body></html>

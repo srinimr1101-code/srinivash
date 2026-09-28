@@ -1,0 +1,10 @@
+body{font-family:Segoe UI,Arial,sans-serif;background:#eef2f7;margin:0;padding:24px;color:#222}
+.card{max-width:720px;margin:0 auto;background:#fff;padding:28px;border-radius:14px;box-shadow:0 6px 24px rgba(0,0,0,.12)}
+h1{text-align:center;margin-top:0}label{display:block;margin:14px 0 4px;font-weight:600}
+input,select,textarea{width:100%;padding:10px;border:1px solid #bbb;border-radius:8px;font-size:15px;box-sizing:border-box}
+button,.btn{display:inline-block;margin-top:18px;padding:12px 22px;background:#5b5bd6;color:#fff;border:0;border-radius:8px;font-size:16px;cursor:pointer;text-decoration:none}
+button:hover,.btn:hover{background:#4444b8}.note{background:#fff6d6;padding:8px 12px;border-radius:8px;font-size:14px}
+.panel{background:#fff;border-radius:12px;padding:16px;margin:0 auto 22px;max-width:720px;box-shadow:0 3px 12px rgba(0,0,0,.1)}
+.panel img{width:100%;max-width:420px;border-radius:10px;display:block}.scene{font-style:italic;color:#555}
+.ref{font-size:12px;color:#888}.center{text-align:center}pre{white-space:pre-wrap;font-family:inherit}
+body.home{background:linear-gradient(135deg,#a8e6cf,#7fb8e6)}
